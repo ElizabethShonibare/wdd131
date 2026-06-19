@@ -7,36 +7,51 @@
     <title> WDD 131 - Dynamic Web Fundamentals - Elizabeth Shonibare </title>
     <meta description="WDD 131 – Dynamic Web Fundamentals">
     <meta author="Elizabeth Shonibare">
-    <link rel="stylesheet" href="stlyes/base.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
     <header>
         <h1>
-            <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+          <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span> 
         </h1>
-        <nav>
+        <nav class="nav">
             <a href="https://www.linkedin.com/in/elizabeth-shonibare-05a64a3a4">LinkedIn</a>
-            <a href=" https://byupw.instructure.com/">I-learn</I-learn></a>
+            <a href=" https://byupw.instructure.com/">I-learn</a>
             <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/ps/23?lang=eng">Scripture</a>
             <a href="">Final Project</a>
         </nav>
     </header>
+    
     <main>
-        <h1> Elizabeth Shonibare</h1>
-        <section class="card">
-            <h2>About Me </h2>
-            <p>My name is Elizabeth popularly known as Shade. I'm currently a student at Brigham Young University and also work as a hairstylist at a barbershop. I was born in Lagos but currently live in Port Harcourt, Nigeria with my children (two boys to be precise). I'm passionate about learning, exploring new things and environment. </p>
-            <img src="images/profile.jpg" alt="image" width="200">
-            <h3>Port Harcourt, Nigeria</h3>
-            <p>Port Harcourt, founded in 1912 and located in Rivers State, is Nigeria's primary oil-producing hub and the fifth most
-            populous city. Known as the "Garden City" for its green spaces, it serves as a crucial industrial center with major
-            shipping ports, refineries, and the Trans-Amadi Industrial Estate. As a capital city with an estimated urban population
-            of over 3 million, it is a bustling, diverse metropolis in the Niger Delta region.</p>
-            <img scr="images/nigeria-flag.jpg" alt="image" width="200">
-        </section> 
-        <section class="card">
-            <h2>Web Dev Resources</h2>
+        <h1 class="container1"> Elizabeth Shonibare</h1>
+        <section class="container">       
+            <div class="main-content">            
+            <div class="inner-header"><h2>About Me </h2></div>
+            <div class="inner-container1">    
+                <img src="images/profile.jpg" alt="image" width="200">
+                <p>My name is Elizabeth popularly known as Shade. I'm currently a student at Brigham Young University and also work as a
+                  hairstylist at a barbershop. I was born in Lagos but currently live in Port Harcourt, Nigeria with my children (two
+                  boys to be precise). I'm passionate about learning, exploring new things and environment. 
+                </p>
+            </div>
+            
+            <div><h3>Port Harcourt, Nigeria</h3></div>
+            <div class="container2">
+                <div class="underline">
+                <img src="images/nigeria-flag.jpg" alt="image" width="200" class="profile-img">
+                <p>Port Harcourt, founded in 1912 and located in Rivers State, is Nigeria's primary oil-producing hub and the fifth most
+                 populous city. Known as the "Garden City" for its green spaces, it serves as a crucial industrial center with major
+                 shipping ports, refineries, and the Trans-Amadi Industrial Estate. As a capital city with an estimated urban population
+                 of over 3 million, it is a bustling, diverse metropolis in the Niger Delta region.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="aside-content">
+        <div class="inner-header"><h2>Web Dev Resources</h2></div>
+        <div>
             <ul>
                 <li><a href="">Dev.to Community</a></li>
                 <li><a href="">Smashing Magazine</a></li>
@@ -45,8 +60,11 @@
                 <li><a href="">Udemy</a></li>
                 <li><a href="">Lorem Picsum Image Placeholder</a></li>
             </ul>
+        </div>
+        </div>
         </section>
-
+    
+        
     </main>
     <footer>
         <ul><span id="currentyear">©2026💐Elizabeth Shonibare💐Nigeria</span></ul>
