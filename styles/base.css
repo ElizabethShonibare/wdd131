@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    font-display: swap;
     background-color: #f8f9fa;
     margin: 0;
     padding: 0;
@@ -56,7 +57,7 @@ a:hover {
 
 .nav a {
     color: white;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     text-decoration: none;
 }
 
@@ -66,7 +67,7 @@ a {
 
 .nav {
     display: flex;
-    padding: 30px;
+    padding: 20px; 
     background: #333333;
     justify-content: space-between;
     /* border-radius: 0.5rem; */
