@@ -1,4 +1,5 @@
-body {font-family: Arial, sans-serif;
+body {
+    font-family: 'Roboto', sans-serif;
     background-color: #f8f9fa;
     margin: 0;
     padding: 0;
@@ -79,8 +80,10 @@ h3 {
 
 
 
-.main-content {
-    background: #cccccc;
+.card {
+    border: 0.5px solid#dddddd;
+
+    /* background: #cccccc; */
     /* grid-column: 1 /2; */
     border-radius: 0.5rem;
 }
@@ -88,7 +91,8 @@ h3 {
 
 
 .aside-content {
-    border: 1px solid#dddddd;
+    /* margin: 0.5px solid#dddddd; */
+    /* border: 0.5px solid#dddddd;  */
     /* grid-column: 3 / 4; */
     border-radius: 0.5rem;
 }
