@@ -49,9 +49,8 @@ main {
 }
 
  /* Header */
-
-
-h1 { 
+h1,
+h2 { 
     text-align: center;
 }
 
@@ -61,7 +60,6 @@ h3{
 }
 
 .inner-header {
-    /* text-align: center;  */
     display: flex;
     background: #1d4d72;
     border-top-right-radius: 0.5rem;
