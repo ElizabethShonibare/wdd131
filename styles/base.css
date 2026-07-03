@@ -55,8 +55,12 @@ h3 {
     text-align: center;
 }
 
+h3{
+    border-bottom: 1px solid black ;
+}
+
 .inner-header {
-    text-align: center;
+    text-align: center; 
     display: flex;
     background: #1d4d72;
     border-top-right-radius: 0.5rem;
@@ -96,7 +100,7 @@ section {
 footer {
     background: #1d4d72;
     color: #ffffff;
-    font-size: xx-large;
+    /* font-size: xx-large; */
     text-align: center;
     border: 200px;
     grid-column: 1 / 4;
