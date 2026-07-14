@@ -14,7 +14,7 @@
         
     .navigation {
         display:flex;
-        flex-direction: space-between;
+        flex: space-between;
         justify-content: center;
         list-style: none;
         padding: 0;
