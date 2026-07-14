@@ -10,16 +10,8 @@
         grid-column: 1 / -1;
         text-align: center;
         margin-bottom: 1rem;
-        
-
-    figure {
-        margin: 0;
     }
-
-    /* #menu { */
-        /* display: none; */
-    /* } */
-    
+        
     .navigation {
         display:flex;
         flex-direction: space-between;
@@ -29,8 +21,7 @@
         margin: 0;
     }
     
-    .navigation a {
-        /* display: block; */
+    .navigation a {        
         padding: 1rem;
         text-decoration: none;
         color: white; 
@@ -42,4 +33,3 @@
         color: #333;
     }
     }
-}
