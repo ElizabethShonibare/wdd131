@@ -25,6 +25,7 @@ main {
 }
 
 nav {
+    display: flex;
     max-width: 700px;
     margin: 1rem auto;
 }
@@ -63,7 +64,7 @@ nav {
     text-align: center;
     text-decoration: none;
     color: #fff;
-    font-weight: 1rem ;
+    /* font-weight: 1rem ; */
 }
 
 .navigation a:hover {
