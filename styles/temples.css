@@ -86,12 +86,34 @@ h1 {
 figure {
     margin: 1rem auto;
     text-align: center;
+    border: 1px solid #ccc;
+    /* adds uniform border */
+    border-radius: 0.5rem;
+    /* smooth corners */
+    padding: 1rem;
+    background-color: #fff;
+    /* consistent background */
+    max-width: 250px;
+    /* keeps figures uniform width */
 }
 
+/* Images inside figures */
+figure img {
+    width: 100%;
+    /* makes all images scale to figure width */
+    height: auto;
+    /* keeps aspect ratio */
+    border-radius: 0.5rem;
+    /* matches figure corners */
+}
+
+/* Captions */
 figcaption {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     font-style: italic;
-    
+    font-size: 0.9rem;
+    color: #555;
+    /* softer caption color */
 }
 
 /* Footer styling */
