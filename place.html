@@ -23,6 +23,7 @@
 
     <main>
     <!-- Hero Image with srcset for responsiveness -->
+    <div>
     <section class="hero">
         <picture>
             <source srcset="images/nigeria-mobile.webp" media="(max-width: 600px)">
@@ -50,12 +51,17 @@
     <!-- Weather Section -->
     <section class="weather">
         <h2>Weather ⛅</h2>
-        <img scr="images/partly-cloudy.svg" alt="partly-cloudy">
+        <picture>
+            <source srcset="images/partly-cloudy.svg" media="(max-width: 600px)">
+            <source srcset="images/partly-cloudy.svg" media="(min-width: 601px)">
+            <img scr="images/partly-cloudy.svg" alt="partly-cloudy">
+        </picture>
         <p><strong>Temperature:</strong> 28°C</p>
         <p><strong>Conditions:</strong> Mostly Sunny</p>
         <p><strong>Wind:</strong> 12 km/h</p>
         <p><strong>Humidity:</strong> 70%</p>
     </section>
+    </div>
     </main>
 
     <!-- Footer -->
