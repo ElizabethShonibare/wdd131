@@ -5,7 +5,7 @@
 // Wait until DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
     const toggleBtn = document.createElement("button");
-    toggleBtn.textContent = "Toggle Dark Mode";
+    toggleBtn.textContent = "Dark Theme";
     toggleBtn.style.margin = "1rem";
     toggleBtn.style.padding = "0.5rem 1rem";
     toggleBtn.style.cursor = "pointer";
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Update footer content
     footer.innerHTML = `
-    <p>©${currentYear} Nigeria Web Project</p>
+    <p>©${currentYear} Elizabeth Shonibare</p>
     <p>Last Modification: ${lastModified}</p>
   `;
 
