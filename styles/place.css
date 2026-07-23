@@ -132,7 +132,7 @@ section {
 
 /* Pseudo-element for wider view weather icon */
 .weather h2::after {
-    content: " ⛅";
+    /* content: " ⛅"; */
     /* Emoticon for desktop view */
     font-size: 1.2em;
     margin-left: 0.5rem;
