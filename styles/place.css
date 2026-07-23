@@ -3,11 +3,8 @@
    ========================= */
 :root {
     --color-primary: #008751;
-    /* Green from Nigeria's flag */
     --color-secondary: #ffffff;
-    /* White */
     --color-accent: #000000;
-    /* Black for text contrast */
     --font-main: 'Arial', sans-serif;
 }
 
@@ -59,7 +56,6 @@ h2 {
 
 header h1 {
     color: var(--color-secondary);
-    /* white */
 }
 
 header {
@@ -82,11 +78,8 @@ section {
    ========================= */
 .hero {
     max-width: none;
-    /* Allow full width */
     margin: 0;
-    /* Remove auto-centering */
     padding: 0;
-    /* No padding around image */
 }
 
 .hero img {
@@ -118,10 +111,8 @@ section {
 .data,
 .weather {
     max-width: none;
-    /* Allow them to stretch full width */
     margin: 0;
-    /* Remove auto-centering */
-}
+}   
 
 .weather {
     background-color: #e8f5e9;
@@ -131,13 +122,11 @@ section {
 }
 
 /* Pseudo-element for wider view weather icon */
-.weather h2::after {
-    /* dcontent: " ⛅"; */
-    /* Emoticon for desktop view */
+.weather h2::after {    
     font-size: 1.2em;
     margin-left: 0.5rem;
     display: none;
-    /* Hidden by default, shown in desktop view */
+    
 }
 
 /* =========================
@@ -164,7 +153,6 @@ footer {
 
     .weather h2::after {
         display: none;
-        /* Hide pseudo-element in mobile view */
     }
 
     .weather h2 img {
@@ -183,11 +171,6 @@ footer {
 
     .weather h2::after {
         display: inline;
-        /* Show pseudo-element in desktop view */
+        
     }
-
-    .weather h2 img {
-        display: none;
-        /* Hide SVG icon in desktop view */
-    }
-}
+}    
