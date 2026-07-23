@@ -1,0 +1,193 @@
+/* =========================
+   Global Variables
+   ========================= */
+:root {
+    --color-primary: #008751;
+    /* Green from Nigeria's flag */
+    --color-secondary: #ffffff;
+    /* White */
+    --color-accent: #000000;
+    /* Black for text contrast */
+    --font-main: 'Arial', sans-serif;
+}
+
+/* =========================
+   Global Styles
+   ========================= */
+/* =========================
+   Dark Mode Styles
+   ========================= */
+body.dark-mode {
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+body.dark-mode header h1 {
+    color: #f4f4f4;
+}
+
+body.dark-mode .data li {
+    background-color: #1e1e1e;
+    border-left: 4px solid #008751;
+}
+
+body.dark-mode .weather {
+    background-color: #1e1e1e;
+    border: 1px solid #008751;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    background-color: var(--color-secondary);
+    color: var(--color-accent);
+    line-height: 1.6;
+}
+
+h1,
+h2 {
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+header h1 {
+    color: var(--color-secondary);
+    /* white */
+}
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+
+section {
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    align-items: center;
+}
+
+/* =========================
+   Hero Image
+   ========================= */
+.hero {
+    max-width: none;
+    /* Allow full width */
+    margin: 0;
+    /* Remove auto-centering */
+    padding: 0;
+    /* No padding around image */
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 4px solid var(--color-primary);
+}
+
+/* =========================
+   Data Section
+   ========================= */
+.data ul {
+    list-style: none;
+    padding: 0;
+}
+
+.data li {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background-color: #f4f4f4;
+    border-left: 4px solid var(--color-primary);
+}
+
+/* =========================
+   Weather Section
+   ========================= */
+
+.data,
+.weather {
+    max-width: none;
+    /* Allow them to stretch full width */
+    margin: 0;
+    /* Remove auto-centering */
+}
+
+.weather {
+    background-color: #e8f5e9;
+    border: 1px solid var(--color-primary);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+/* Pseudo-element for wider view weather icon */
+.weather h2::after {
+    content: " ⛅";
+    /* Emoticon for desktop view */
+    font-size: 1.2em;
+    margin-left: 0.5rem;
+    display: none;
+    /* Hidden by default, shown in desktop view */
+}
+
+/* =========================
+   Footer
+   ========================= */
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9em;
+    width: 100%;
+}
+
+/* =========================
+   Media Queries
+   ========================= */
+
+/* Mobile view */
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    .weather h2::after {
+        display: none;
+        /* Hide pseudo-element in mobile view */
+    }
+
+    .weather h2 img {
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+        margin-left: 0.5rem;
+    }
+}
+
+/* Wider view (desktop) */
+@media (min-width: 601px) {
+    body {
+        font-size: 18px;
+    }
+
+    .weather h2::after {
+        display: inline;
+        /* Show pseudo-element in desktop view */
+    }
+
+    .weather h2 img {
+        display: none;
+        /* Hide SVG icon in desktop view */
+    }
+}
