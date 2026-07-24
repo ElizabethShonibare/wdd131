@@ -43,7 +43,7 @@ body {
     margin: 0;
     font-family: var(--font-main);
     background-color: var(--color-secondary);
-    color: var(--color-accent);
+    /* color: var(--color-accent); */
     line-height: 1.6;
 }
 
