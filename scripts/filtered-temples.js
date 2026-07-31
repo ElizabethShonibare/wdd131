@@ -111,7 +111,7 @@ function renderTemples(filteredTemples) {
         <p><strong>Location:</strong> ${temple.location}</p>
         <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
         <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
-        <img src="${temple.imageUrl}" alt="${temple.name}" loading="lazy" width="${temple.width}" height="${temple.height}">
+        <img src="${temple.imageUrl}" alt="${temple.name}" loading="lazy" width="400" height="250">
       </div>
     `;
     });
@@ -119,8 +119,6 @@ function renderTemples(filteredTemples) {
 
 // Initial render
 renderTemples(temples);
-
-
 
 // Footer year and last modified
 document.getElementById("year").textContent = new Date().getFullYear();
