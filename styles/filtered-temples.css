@@ -11,19 +11,21 @@ nav ul{
      padding: 20px;
      font-size: 20px;
      justify-content: space-between;
- }
+}
 
 nav a {
      color: white;
      text-decoration: none;
- }
+}
 
 nav a:hover {
      background-color: #555555;
      color: #801700;
- }
+}
 
-
+h1{ 
+    text-align: center;
+}
 #temple-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -52,3 +54,55 @@ footer {
     padding: 20px;
 }
 
+/* Default (desktop-first) styles are already set */
+
+/* 📱 Small screens (phones) */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 0.75rem;
+        display: block;
+    }
+
+    #temple-cards {
+        grid-template-columns: 1fr;
+        /* single column */
+    }
+
+    .temple-card {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .temple-card img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* 📲 Medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    #temple-cards {
+        grid-template-columns: repeat(2, 1fr);
+        /* two columns */
+    }
+
+    .temple-card {
+        font-size: 1rem;
+    }
+}
+
+/* 💻 Large screens (desktops) */
+@media (min-width: 1025px) {
+    #temple-cards {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .temple-card {
+        font-size: 1.1rem;
+    }
+}
