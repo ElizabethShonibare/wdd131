@@ -1,0 +1,114 @@
+h1{
+    background: #2d032b;
+    color: white;
+    text-align: center;
+}
+
+/* General form styling */
+form {
+    max-width: 600px;
+    /* margin: 2rem auto; */
+    /* padding: 2rem; */
+    background: #d5cdd5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+/* Inputs, selects, textarea */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Checkbox and radio groups */
+ fieldset {
+    border: none;
+    margin-top: 1rem;
+} 
+
+legend {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+/* Submit button */
+input[type="submit"] {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+    /* full width on mobile */
+}
+
+input[type="submit"]:hover {
+    background-color: #357ab8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+    background: #2d032b;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    form {
+        padding: 3rem;
+    }
+
+    input[type="submit"] {
+        width: auto;
+        /* button shrinks to content on larger screens */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 1rem;
+    }
+
+    form {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    label {
+        font-size: 0.95rem;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 0.95rem;
+    }
+}
