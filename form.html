@@ -4,16 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit your product review with ratings, installation date, useful features, and
+    optional written feedback or name. A simple, responsive form designed for usability and a positive user experience.">
+    <meta name="author" content="Elizabeth Shonibare">
     <title>Product Review Form</title>
-    <meta name="description" content="Making use and understanding the web-dynamic fundamentals">
-    
+   
     <link rel="stylesheet" href="styles/form.css">
 
     <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
-    <h1>Product Review</h1>
+    <header>
+        <h1>Product Review Form</h1>        
+    </header>
+
     <form method="get" action="review.html">
 
         <!-- Product Name -->
@@ -26,11 +31,11 @@
         <!-- Overall Rating -->
         <fieldset>
             <legend>Overall Rating:</legend>
-            <label><input type="radio" id="rating1" name="rating" value="1" required> ☆</label>
-            <label><input type="radio" id="rating2" name="rating" value="2"> ☆☆</label>
-            <label><input type="radio" id="rating3" name="rating" value="3"> ☆☆☆</label>
-            <label><input type="radio" id="rating4" name="rating" value="4"> ☆☆☆☆</label>
-            <label><input type="radio" id="rating5" name="rating" value="5"> ☆☆☆☆☆</label>
+            <label><input type="radio" id="rating" name="rating" value="1" required> ☆</label>
+            <label><input type="radio" id="rating" name="rating" value="2" required> ☆☆</label>
+            <label><input type="radio" id="rating" name="rating" value="3" required> ☆☆☆</label>
+            <label><input type="radio" id="rating" name="rating" value="4" required> ☆☆☆☆</label>
+            <label><input type="radio" id="rating" name="rating" value="5" required> ☆☆☆☆☆</label>
         </fieldset>
 
         <!-- Date of Installation -->
@@ -40,10 +45,10 @@
         <!-- Useful Features -->
         <fieldset>
             <legend>Which features did you find useful in the product?(check all that apply)</legend>
-            <label><input type="checkbox" id="feature1" name="features" value="Easy Setup"> Easy Setup</label>
-            <label><input type="checkbox" id="feature1" name="features" value="Durability">Durability</label>
-            <label><input type="checkbox" id="feature2" name="features" value="Performance">Performance</label>
-            <label><input type="checkbox" id="feature3" name="features" value="Design">Design</label>
+            <label><input type="checkbox" id="features" name="features" value="Easy Setup"> Easy Setup</label>
+            <label><input type="checkbox" id="features" name="features" value="Durability">Durability</label>
+            <label><input type="checkbox" id="features" name="features" value="Performance">Performance</label>
+            <label><input type="checkbox" id="features" name="features" value="Design">Design</label>
         </fieldset>
 
         <!-- Written Review -->
