@@ -1,28 +1,20 @@
 // Product Array
 const products = [
-    { id: 1, name: "Laptop" },
-    { id: 2, name: "Smartphone" },
-    { id: 3, name: "Tablet" },
-    { id: 4, name: "Headphones" }
+    { id: "p1", name: "Laptop Pro 15" },
+    { id: "p2", name: "Smartphone X" },
+    { id: "p3", name: "Wireless Headphones" },
+    { id: "p4", name: "Smartwatch Z" }
 ];
 
-// Populate select options
-const productSelect = document.getElementById("product");
-products.forEach(product => {
-    const option = document.createElement("option");
-    option.value = product.name; // value is product name
-    option.textContent = product.name; // display text
-    productSelect.appendChild(option);
-});
-
-// Track reviews with localStorage
-window.addEventListener("load", () => {
-    if (window.location.pathname.includes("review.html")) {
-        let count = localStorage.getItem("reviewCount") || 0;
-        count++;
-        localStorage.setItem("reviewCount", count);
-        console.log(`Reviews completed: ${count}`);
-    }
+// Populate Product Name select
+window.addEventListener("DOMContentLoaded", () => {
+    const select = document.getElementById("productName");
+    products.forEach(product => {
+        const option = document.createElement("option");
+        option.value = product.id;
+        option.textContent = product.name;
+        select.appendChild(option);
+    });
 });
 
 // Sets current year
@@ -31,4 +23,3 @@ document.getElementById("currentyear").textContent = `©${year} 💐Elizabeth Sh
 
 // Set last modified date
 document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`;
-

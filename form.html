@@ -7,82 +7,65 @@
     <meta name="description" content="A simple, responsive form designed for usability and a positive user experience.">
     <meta name="author" content="Elizabeth Shonibare">
     <title>Product Review Form</title>
-   
+    
     <link rel="stylesheet" href="styles/form.css">
-
     <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <h1>Product Review Form</h1>        
-    </header>
+    <main>
+        <h1>Product Review</h1>
+        <form method="get" action="review.html">
 
-    <form method="get" action="review.html">
+            <!-- Product Name -->
+            <label for="productName">Product Name <span class="required">*</span></label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Choose a Product ...</option>
+                <!-- Options populated dynamically by JS -->
+            </select>
 
-        <!-- Product Name -->
-        <label for="product">Product Name:</label>
-        <select id="product" name="product" required>
-            <option value="" disabled selected>Select a Product ...</option>
-            <!-- Options will be populated dynamically via JS -->
-        </select>
+            <!-- Overall Rating -->
+            <fieldset>
+                <legend>Overall Rating <span class="required">*</span></legend>
+                <label><input type="radio" id="rating1" name="rating" value="1" required> ☆</label>
+                <label><input type="radio" id="rating2" name="rating" value="2" required> ☆☆</label>
+                <label><input type="radio" id="rating3" name="rating" value="3" required> ☆☆☆</label>
+                <label><input type="radio" id="rating4" name="rating" value="4" required> ☆☆☆☆</label>
+                <label><input type="radio" id="rating5" name="rating" value="5" required> ☆☆☆☆☆</label>
+            </fieldset>
 
-        <!-- Overall Rating -->
-        <fieldset>
-            <legend>Overall Rating:</legend>
-            <input type="radio" id="rating1" name="rating" value="1" required>
-            <label for="rating1">☆</label>
-        
-            <input type="radio" id="rating2" name="rating" value="2" required>
-            <label for="rating2">☆☆</label>
-        
-            <input type="radio" id="rating3" name="rating" value="3" required>
-            <label for="rating3">☆☆☆</label>
-        
-            <input type="radio" id="rating4" name="rating" value="4" required>
-            <label for="rating4">☆☆☆☆</label>
-        
-            <input type="radio" id="rating5" name="rating" value="5" required>
-            <label for="rating5">☆☆☆☆☆</label>
-        </fieldset>
+            <!-- Date of Installation -->
+            <label for="installDate">Date of Installation <span class="required">*</span></label>
+            <input type="date" id="installDate" name="installDate" required>
 
-        <!-- Date of Installation -->
-        <label for="installDate">Date of Installation:</label>
-        <input type="date" id="installDate" name="installDate" required>
+            <!-- Useful Features -->
+            <fieldset>
+                <legend>Which features did you find useful in the product? (Check all that apply)</legend>
+                <label><input type="checkbox" id="durability" name="features" value="Durability"> Durability</label>
+                <label><input type="checkbox" id="ease" name="features" value="Ease of Use"> Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="features" value="Performance"> Performance</label>
+                <label><input type="checkbox" id="design" name="features" value="Design"> Design</label>
+            </fieldset>
 
-        <!-- Useful Features -->
-        <fieldset>
-            <legend>Which features did you find useful in the product? (Check all that apply)</legend>
-        
-            <input type="checkbox" id="feature1" name="features" value="Easy Setup">
-            <label for="feature1">Easy Setup</label>
-        
-            <input type="checkbox" id="feature2" name="features" value="Durability">
-            <label for="feature2">Durability</label>
-        
-            <input type="checkbox" id="feature3" name="features" value="Performance">
-            <label for="feature3">Performance</label>
-        
-            <input type="checkbox" id="feature4" name="features" value="Design">
-            <label for="feature4">Design</label>
-        </fieldset>
-       
-        <!-- Written Review -->
-        <label for="review" class="optional">Written Review (Optional):</label>
-        <textarea id="review" name="review" class="optional"></textarea>
+            <!-- Written Review -->
+            <label for="review">Written Review (Optional)</label>
+            <textarea id="review" name="review" rows="4"></textarea>
 
-        <!-- User Name -->
-        <label for="username" class="optional">Your Name(Optional):</label>
-        <input type="text" id="username" name="username" class="optional">
+            <!-- User Name -->
+            <label for="username">Your Name (Optional)</label>
+            <input type="text" id="username" name="username">
 
-        <!-- Submit -->
-        <input type="submit" value="Post Review">
-    </form>
+            <!-- Submit -->
+            <input type="submit" value="Post Review">
+        </form>
 
-    <footer>
-        <p><span id="currentyear">©️ 2026💐Elizabeth Shonibare💐Nigeria </span></p>
-        <p><span id="lastModified">Last Modification</span> </p>
-    </footer>
+        <footer>
+            <p><span id="currentyear"></span></p>
+            <p><span id="lastModified"></span></p>
+        </footer>
+        
+    </main>
+    
 </body>
 
 </html>

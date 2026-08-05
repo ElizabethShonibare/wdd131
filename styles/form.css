@@ -1,3 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    max-width: 600px;
+        margin: 2rem auto;
+        background: #ff3f;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #ff3f; 
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 h1{
     background: #2d032b;
     color: white;
@@ -16,11 +45,15 @@ form {
     box-sizing: border-box;
 }
 
-/* Labels */
-label {
+label,
+legend {
     display: block;
     margin-top: 1rem;
-    font-weight: 600;
+    font-weight: bold;
+}
+
+legend {
+    margin-bottom: 0.5rem;
 }
 
 /* Inputs, selects, textarea */
@@ -43,10 +76,6 @@ textarea {
     margin-top: 1rem;
 } 
 
-legend {
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -68,16 +97,20 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #357ab8;
+    background: #2d032b;
 }
 
 /* Footer */
 footer {
+    max-width: 1000px;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 2rem auto 0 auto;
+    margin-left: 6rem;
+    padding: 1rem;
     font-size: 1rem;
     background: #2d032b;
     color: white;
+    border-radius: 0 0 8px 8px;
 }
 
 /* Responsive adjustments */
@@ -111,4 +144,45 @@ footer {
     textarea {
         font-size: 0.95rem;
     }
+}
+
+
+
+
+
+
+
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+input[type="submit"] {
+    background: #0077cc;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background: #005fa3;
+}
+
+.required {
+    color: red;
 }
