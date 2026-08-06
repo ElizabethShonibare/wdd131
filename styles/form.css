@@ -7,21 +7,16 @@
 body {
     font-family: Arial, sans-serif;
     background: #f9f9f9;
-    color: #333;
+    color: black;
     margin: 0;
     padding: 0;
-    max-width: 600px;
-        margin: 2rem auto;
-        background: #ff3f;
-        padding: 2rem;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 main {
     max-width: 600px;
     margin: 2rem auto;
-    background: #ff3f; 
+    background: #fff; 
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -36,8 +31,8 @@ h1{
 /* General form styling */
 form {
     max-width: 600px;
-    /* margin: 2rem auto; */
-    /* padding: 2rem; */
+    margin: 1rem;
+    padding: 1.5rem;
     background: #d5cdd5;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -50,6 +45,7 @@ legend {
     display: block;
     margin-top: 1rem;
     font-weight: bold;
+    font-size:2rem ;
 }
 
 legend {
@@ -66,8 +62,26 @@ textarea {
     margin-top: 0.4rem;
     border: 1px solid #ccc;
     border-radius: 6px;
-    font-size: 1rem;
+    font-size: 2em;
     box-sizing: border-box;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    transform: scale(2);
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 /* Checkbox and radio groups */
@@ -76,47 +90,48 @@ textarea {
     margin-top: 1rem;
 } 
 
-
-input[type="checkbox"],
-input[type="radio"] {
-    margin-right: 0.5rem;
-}
-
 /* Submit button */
-input[type="submit"] {
+input/* max-width: 1000px; */[type="submit"] {
     margin-top: 1.5rem;
-    padding: 0.8rem 1.5rem;
+    padding: 0.8rem 1.5rem; 
     border: none;
     border-radius: 6px;
     font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s ease;
+    background: #2d032b;
+    color: #fff;
     width: 100%;
     /* full width on mobile */
 }
 
 input[type="submit"]:hover {
-    background: #2d032b;
+    background: red;
+}
+
+.required {
+    color: red;
 }
 
 /* Footer */
 footer {
-    max-width: 1000px;
+    
     text-align: center;
-    margin-top: 2rem auto 0 auto;
-    margin-left: 6rem;
+    /* margin-top: 2rem auto 0 auto; */
+    /* margin-left: 6rem; */
     padding: 1rem;
-    font-size: 1rem;
-    background: #2d032b;
-    color: white;
-    border-radius: 0 0 8px 8px;
+    font-size: 2rem;
+    font-weight: bold;
+    /* background: #2d032b; */
+    color: black;
+    /* border-radius: 0 0 8px 8px; */
 }
 
 /* Responsive adjustments */
 @media (min-width: 768px) {
     form {
-        padding: 3rem;
+        padding: 1rem;
     }
 
     input[type="submit"] {
@@ -129,21 +144,7 @@ footer {
     body {
         padding: 1rem;
     }
-
-    form {
-        margin: 1rem;
-        padding: 1.5rem;
-    }
-
-    label {
-        font-size: 0.95rem;
-    }
-
-    input,
-    select,
-    textarea {
-        font-size: 0.95rem;
-    }
+    
 }
 
 
@@ -153,36 +154,6 @@ footer {
 
 
 
-input,
-select,
-textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.3rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
 
-input[type="radio"],
-input[type="checkbox"] {
-    width: auto;
-    margin-right: 0.5rem;
-}
 
-input[type="submit"] {
-    background: #0077cc;
-    color: #fff;
-    border: none;
-    padding: 0.7rem 1.2rem;
-    margin-top: 1.5rem;
-    cursor: pointer;
-    border-radius: 4px;
-}
 
-input[type="submit"]:hover {
-    background: #005fa3;
-}
-
-.required {
-    color: red;
-}
